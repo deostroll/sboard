@@ -6,7 +6,7 @@ import 'angular2/core';
 import 'angular2/http';
 import 'angular2/router';
 
-
+import 'konva/konva';
 // RxJS 5
 // import 'rxjs/Rx';
 
