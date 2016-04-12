@@ -5,16 +5,6 @@ import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2
 import {NavService} from './app/services/navigation';
 import {appInjector} from './app/services/app-injector';
 
-// import {SeedApp} from './app/seed-app';
-
-//
-// bootstrap(SeedApp, [
-//   HTTP_PROVIDERS,
-//   ROUTER_PROVIDERS,
-//   provide(LocationStrategy, {useClass: HashLocationStrategy})
-// ])
-// .catch(err => console.error(err));
-
 import {ScrabbleApp} from './app/scrabble-app';
 var svc = new NavService();
 svc.id = 'from bootstrap';

@@ -8,21 +8,7 @@ export class NavigationComponent implements OnActivate {
   constructor( private name: string) {
     console.log('component');
     console.log(this.name);
-    // var injector = Injector.resolveAndCreate([
-    //   NavService
-    //   // provide(NavService, {useExisting: NavService})
-    // ]);
-    // console.log(NavService, Injector, provide);
-    // this.svc = injector.get(NavService);
-    // console.log(this.svc.id);
-
-    // var bindings = Injector.resolve([
-    //   provide(NavService, {useExisting: NavService})
-    // ]);
-    //
-    // var svc = Injector.fromResolvedBindings(bindings).get(NavService);
-    // console.log(this.svc);
-
+    
     let injector:Injector = appInjector();
     this.svc = injector.get(NavService);
     console.log(this.svc);
